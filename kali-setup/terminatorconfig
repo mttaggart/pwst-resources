@@ -1,0 +1,38 @@
+[global_config]
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, MavenPluginURLHandler, LaunchpadBugURLHandler
+  title_transmit_bg_color = "#204a87"
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_darkness = 0.8
+    font = Source Code Pro for Powerline 11
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    scrollbar_position = hidden
+  [[Future]]
+    background_darkness = 0.8
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    font = Unispace 11
+    foreground_color = "#0064fa"
+    scrollbar_position = hidden
+    use_system_font = False
+  [[High Contrast]]
+    background_color = "#ffffff"
+    cursor_color = "#aaaaaa"
+    foreground_color = "#000000"
+  [[Streaming]]
+    background_color = "#0e0e0e"
+    cursor_color = "#aaaaaa"
+    foreground_color = "#d3d7cf"
+    palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
+    scrollbar_position = hidden
