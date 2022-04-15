@@ -21,7 +21,6 @@ To run the setup script, Run the following in a Terminal:
 
 ```bash
 cd ~/Downloads/pwst-resources/kali-setup
-chmod +x ./setup.sh
 ./setup.sh
 ```
 
