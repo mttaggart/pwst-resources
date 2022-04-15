@@ -54,8 +54,6 @@ cp ./terminatorconfig ~/.config/terminator/config
 
 # Setup Shell
 curl -kL https://get.oh-my.fish | fish
-fish -c "omf install bobthefish"
+fish -c "omf install bobthefish && exit"
 echo "set -x PATH \$PATH $HOME/.cargo/bin" >> ~/.config/fish/config.fish
-chsh -s /usr/bin/fish
-
-echo "Setup complete! Log out and log back in for your shell to work correctly!"
+echo "Setup is complete! If you wish to use fish, run:\nchsh -s /usr/bin/fish"
