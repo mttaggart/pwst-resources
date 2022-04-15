@@ -17,15 +17,7 @@ sudo apt install -y \
     python3-pip \
     brave-browser \
     vim-gtk3 \
-    alien
-
-# Handle Zenmap installation
-echo "Installing Zenmap"
-cd ~/Downloads
-wget "https://nmap.org/dist/zenmap-7.91-1.noarch.rpm"
-sudo alien -d zenmap-7.91-1.noarch.rpm
-sudo dpkg -i zenmap*.deb
-sudo rm zenmap*
+    zenmap-kbx
 
 # Install VSCode
 echo "Installing VSCode"
