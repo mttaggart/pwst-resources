@@ -29,7 +29,7 @@ rm zenmap*
 
 # Install VSCode
 echo "Installing VSCode"
-wget "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64" -o code.deb
+curl -L "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64" -o code.deb
 sudo dpkg -i code.deb
 rm code.deb
 
