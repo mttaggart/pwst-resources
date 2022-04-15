@@ -25,7 +25,7 @@ cd ~/Downloads
 wget "https://nmap.org/dist/zenmap-7.91-1.noarch.rpm"
 sudo alien -d zenmap-7.91-1.noarch.rpm
 sudo dpkg -i zenmap*.deb
-rm zenmap*
+sudo rm zenmap*
 
 # Install VSCode
 echo "Installing VSCode"
