@@ -1,0 +1,14 @@
+body {
+    background: #202020;
+    color: white;
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: cyan;
+}
+
+h1.toggled {
+    color: magenta;
+}
