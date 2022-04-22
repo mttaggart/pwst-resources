@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Hello, World!</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <style>
+
+            code {
+                color: magenta;
+            }
+
+            #js-content {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="hello-world">Hello, World!</h1>
+        <p>This page goes into more detail about HTML.</p>
+        <p>The button below uses an <code>onclick</code> attribute to determine its behavior.</p>
+        <button onclick="alert('I came from an attribute!')">Click Me!</button>
+        <div id="js-content"></div>
+        <script>
+            let jsText = document.createTextNode("This element is not visible with 'View Source' because it is added by JavaScript.");
+            let jsPar = document.createElement("p");
+            jsPar.appendChild(jsText);
+            document.getElementById("js-content").appendChild(jsPar);
+        </script>
+    </body>
+</html>
