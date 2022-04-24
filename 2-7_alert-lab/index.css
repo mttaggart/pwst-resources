@@ -1,0 +1,37 @@
+body {
+    background: #202020;
+    color: white;
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: magenta;
+}
+
+code {
+    color: magenta;
+}
+
+.info {
+    color: cyan;
+}
+
+.special {
+    background: #929292;
+    color: antiquewhite;
+    text-shadow: 1px 1px 1px black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.special code {
+    color: #8100a1;
+}
+
+#color-changer {
+    height: 250px;
+    width: 250px;
+    margin: auto;
+    border: 4px dashed magenta;
+}
