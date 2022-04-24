@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Hello, World!</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <h1 id="hello-world">Hello, World!</h1>
+        <p class="info">This page goes into more detail about <b>JavaScript</b>.</p>
+        <p class="info">
+            Below is a set of sliders, and a <code>div</code> element.
+            The <code>div</code>'s color is set by the 3 sliders, which
+            correspond to Red, Green, and Blue values.
+            This adjustment is handled by the <b>JavaScript</b> linked 
+            to this page.
+        </p>
+        <div class="form-control">
+            <label for="slider-red">Red</label>
+            <input class="color-slider" id="slider-red" name="slider-red" type="range" min="0" max="255" />
+            <label for="slider-green">Green</label>
+            <input class="color-slider" id="slider-green" name="slider-green" type="range" min="0" max="255" />
+            <label for="slider-blue">Blue</label>
+            <input class="color-slider" id="slider-blue" name="slider-blue" type="range" min="0" max="255" />
+        </div>
+        <div id="color-changer"></div>
+        <script src="index.js"></script>
+    </body>
+</html>
