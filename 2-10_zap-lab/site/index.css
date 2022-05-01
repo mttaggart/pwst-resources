@@ -1,0 +1,53 @@
+body {
+    background: #202020;
+    color: antiquewhite;
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: magenta;
+}
+
+code {
+    color: magenta;
+}
+
+a {
+ color: magenta;
+}
+
+nav a {
+    background: #424242;
+    color: antiquewhite;
+    padding: 10px;
+    font-size: 2rem;
+    border-radius: 5px;
+}
+
+label,textarea {
+    display: block;
+}
+
+textarea {
+    height: 300px;
+    width: 400px;
+
+}
+
+.info {
+    color: cyan;
+}
+
+.special {
+    background: #929292;
+    color: antiquewhite;
+    text-shadow: 1px 1px 1px black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.special code {
+    color: #8100a1;
+}
+

@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>2-10: ZAP Spidering/Fuzzing</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <h1>Contact</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="links.html">Links</a>
+        </nav>
+        <p>
+            The <code>Contact</code> page can provide login info, and may in fact be an
+            attack vector, depending on what the contact form does.
+        </p>
+        <form id="contact-form">
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="user@domain.com" />
+            <label for="message">Message</label>
+            <textarea name="message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <script>
+            document.getElementById("contact-form")
+            .addEventListener("submit", (e) => {
+                e.preventDefault();
+                console.log(e);
+                alert("Message sent!");
+            });
+        </script>
+    </body>
+</html>
