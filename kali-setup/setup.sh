@@ -17,7 +17,8 @@ sudo apt install -y \
     python3-pip \
     brave-browser \
     vim-gtk3 \
-    zenmap-kbx
+    zenmap-kbx \ 
+    zaproxy
 
 # Install VSCode
 echo "Installing VSCode"
