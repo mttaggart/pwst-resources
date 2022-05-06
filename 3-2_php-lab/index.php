@@ -15,10 +15,28 @@
         </p>
         <p>Bonus: This implmentation is vulnerable to a classic web exploit! See if you can figure it out.</p>
         <p>
-            <?php 
-                $msg = $_GET["msg"];
-                echo $msg;
-            ?>
+        <?php 
+                // Check for GET Param
+                if (isset($_GET["msg"])) {
+                    $msg = $_GET["msg"];
+                    echo $msg;
+                } else {
+                    echo "Did you forget something? Like a <code>msg</code> maybe?";
+                }
+
+
+        ?>
         </p>
+        <?php
+            // Check for POST params
+            // This is a truly terrible idea!
+            if (isset($_POST["cmd"])) {
+                echo "<pre>";
+                system($_POST["cmd"]);
+                echo "</pre>";
+            } else {
+                echo "<pre>...</pre>";
+            }
+        ?>
     </body>
 </html>
