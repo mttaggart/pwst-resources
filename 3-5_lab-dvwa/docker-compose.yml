@@ -1,0 +1,31 @@
+version: "3.9"
+    
+services:
+  db:
+    image: mysql:5.7
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: damnvulnerable
+      MYSQL_DATABASE: dvwa
+      MYSQL_USER: dvwa
+      MYSQL_PASSWORD: damnvulnerable
+    
+  dvwa:
+    depends_on:
+      - db
+    image: cytopia/dvwa:php-8.0
+    volumes:
+      - wordpress_data:/var/www/html
+    ports:
+      - "8000:80"
+    restart: always
+    environment:
+      MYSQL_HOSTNAME: db
+      MYSQL_USERNAME: root
+      MYSQL_PASSWORD: damnvulnerable
+      MYSQL_DATABASE: dvwa
+volumes:
+  db_data: {}
+  wordpress_data: {}
