@@ -15,7 +15,10 @@ services:
   wordpress:
     depends_on:
       - db
-    image: wordpress:latest
+    image: pwst_wordpress
+    build:
+        context: .
+        dockerfile: ./wp-dockerfile
     volumes:
       - wordpress_data:/var/www/html
     ports:
