@@ -4,6 +4,8 @@ services:
   db:
     image: mysql:5.7
     restart: always
+    volumes:
+      - db_data:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: damnvulnerable
       MYSQL_DATABASE: dvwa
