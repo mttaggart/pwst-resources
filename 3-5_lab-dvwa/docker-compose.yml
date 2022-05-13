@@ -17,7 +17,7 @@ services:
       - db
     image: cytopia/dvwa:php-8.0
     volumes:
-      - wordpress_data:/var/www/html
+      - dvwa_data:/var/www/html
     ports:
       - "8000:80"
     restart: always
@@ -28,4 +28,4 @@ services:
       MYSQL_DATABASE: dvwa
 volumes:
   db_data: {}
-  wordpress_data: {}
+  dvwa_data: {}
