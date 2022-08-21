@@ -10,15 +10,7 @@ echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable ma
 # Update and add necessary packages
 echo "Installing Packages"
 sudo apt update
-sudo apt install -y \
-    fish \
-    terminator \
-    gedit \
-    python3-pip \
-    brave-browser \
-    vim-gtk3 \
-    zenmap-kbx \ 
-    zaproxy
+sudo apt install -y fish terminator gedit python3-pip brave-browser vim-gtk3 zaproxy
 
 # Install VSCode
 echo "Installing VSCode"
