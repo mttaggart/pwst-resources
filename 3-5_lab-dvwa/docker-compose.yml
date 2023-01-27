@@ -15,7 +15,7 @@ services:
   dvwa:
     depends_on:
       - db
-    image: cytopia/dvwa:php-8.0
+    image: cytopia/dvwa:php-8.0-0.1
     volumes:
       - dvwa_data:/var/www/html
     ports:
