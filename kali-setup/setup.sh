@@ -27,6 +27,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 # Setup fonts
 mkdir ~/Scripts
 cd ~/Scripts
+git clone https://github.com/danielmiessler/SecLists
 git clone https://github.com/powerline/fonts
 cd fonts
 chmod +x install.sh
