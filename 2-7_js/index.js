@@ -8,36 +8,14 @@ function getCurrentColor() {
 }
 
 // Performs the hard work of updating the color
-// Uses a handy switch/case structure to match the colorName
-// and update the correct value.
-function updateColor(colorName, colorVal) {
+// Simply grabs the current slider values and converts them to a CSS background style
+function updateColor() {
     let colorChanger = document.getElementById("color-changer");
     let [red, green, blue] = getCurrentColor();
-    switch (colorName) {
-        case "red":
-            red = colorVal;
-            break;
-        case "green":
-            green = colorVal;
-            break;
-        case "blue":
-            blue = colorVal;
-            break;
-        default:
-            break;
-    }
     let newColor = `rgb(${red},${green},${blue})`;
     colorChanger.style.setProperty("background", newColor);
 }
 
-// The Event Handler that fires
-// when the slider is changed
-const colorHandler = (e) => {
-    let targetName = e.target.name;
-    let colorName = targetName.split("-")[1];
-    let colorVal = e.target.value;
-    updateColor(colorName, colorVal);
-}
 
 // Set the default color. Happens on load of this file.
 document.getElementById("color-changer").style.setProperty("background", "#646464");
@@ -46,5 +24,5 @@ document.getElementById("color-changer").style.setProperty("background", "#64646
 document
     .querySelectorAll(".color-slider")
     .forEach(l => {
-        l.addEventListener("change", colorHandler);
+        l.addEventListener("change", updateColor);
     });
