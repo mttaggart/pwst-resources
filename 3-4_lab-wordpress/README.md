@@ -1,2 +1,2 @@
-apt update && apt install -y default-mysql-client
+apt update && apt install -y default-mysql-client \n
 docker compose up -d
