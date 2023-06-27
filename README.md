@@ -1,6 +1,6 @@
 # PWST Resources
 
-This repository contains resources for students taking the TCM Academy course "Practical Webapp Security and Testing." 
+This repository contains resources for students taking the Taggart Institute course "Practical Webapp Security and Testing." 
 
 ## Usage
 
